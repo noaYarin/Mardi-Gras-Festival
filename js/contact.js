@@ -9,7 +9,7 @@ let button=document.getElementById("btn").addEventListener('click',function(){
  let newwin = window.open("","submit","width=400,height=200");
 
 if(uname.value.length < 2 || luname.value.length < 2 ){
-alert("Your full name is too short!");
+alert("Your full name is too short! please write again");
 return;
 }
 
