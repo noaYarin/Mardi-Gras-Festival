@@ -1,0 +1,76 @@
+/*popup from index page*/
+
+#popwrap {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: none;
+
+    #pop {
+        width: 50vw;
+        height: 50vh;
+        border: $blackcolor 3px dashed;
+        margin: 0 auto;
+        margin-top: 200px;
+        background-color: #f2cc0f;
+        position: relative;
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+
+        @include landscape {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    #close {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        background-color: $purplecolor;
+        border-radius: 50%;
+        border: black 2px solid;
+        font-size: $fsizehead;
+        font-family: $fonthead;
+    }
+
+    .content {
+        font-size: $fsizecon;
+        font-family: $fontcon;
+        font-weight: bold;
+
+        h5 {
+            font-family: $fonthead;
+            font-weight: 400;
+            border-bottom: 1px solid #000;
+            color: $whitecolor;
+        }
+
+        label,
+        input {
+            font-family: $fonthead2;
+            font-size: $fsizehead2;
+            padding-right: 10px;
+            margin-top: 20px;
+            margin-right: 5px;
+        }
+
+        #send {
+            padding: 5px 15px;
+            margin-left: 40px;
+            text-align: center;
+            border-radius: 10%;
+            color: $whitecolor;
+            border: black 2px solid;
+            background-color: $purplecolor;
+            margin-top: 10px;
+        }
+    }
+}

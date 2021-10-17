@@ -1,0 +1,33 @@
+.main-lightbox {
+    width: 100vw;
+    background-image: $background;
+
+    .gallery {
+        width: 80vw;
+        margin: 0 auto;
+
+        .row {
+            margin-top: 120px;
+        }
+
+        .item {
+            filter: brightness(20%);
+            overflow: hidden;
+
+            &:hover {
+                filter: brightness(90%);
+            }
+
+            .m1 {
+                border: solid black 4px;
+                transform: scale(1);
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,35 @@
+.main-wrap {
+    width: 100vw;
+    height: auto;
+    background-image: $background;
+
+    .miniwrap {
+        width: 50vw;
+        margin: 0 auto;
+
+        @include landscape {
+            margin-top: 200px;
+        }
+
+        .btn {
+            background-color: $greencolor;
+            font-size: $fsizecon;
+            font-family: $fontcon;
+            font-weight: 800;
+
+            &:hover {
+                filter: brightness(80%);
+            }
+
+            .changimg {
+                padding-right: 15px;
+            }
+        }
+
+        .bodyf {
+            font-size: $fsizecon;
+            font-family: $fontcon;
+            font-weight: 600;
+        }
+    }
+}

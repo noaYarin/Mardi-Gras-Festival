@@ -1,0 +1,89 @@
+/*cards*/
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    h2 {
+        font-family: $fonthead;
+        font-size: 2.2rem;
+        margin-left: 100px;
+        margin-top: 250px;
+        font-weight: bold;
+
+        @include landscape {
+            margin-top: 80px;
+        }
+
+        @include tablet {
+            margin-top: 80px;
+        }
+
+        @include desktop {
+            margin-top: 80px;
+        }
+    }
+
+    .card {
+        width: 19vw;
+        padding-top: 40px;
+        border-radius: 20px;
+        margin: 40px;
+        text-align: center;
+        box-shadow: $boxshadow;
+        transition: width 2s;
+        line-height: 1.5;
+
+        @include landscape {
+            width: 100vw;
+        }
+
+        @include tablet {
+            width: 100vw;
+        }
+
+        @include desktop {
+            width: 100vw;
+        }
+
+        &:hover {
+            width: 300px;
+
+            @include landscape {
+                width: 100vw;
+            }
+
+            @include tablet {
+                width: 100vw;
+            }
+
+            @include desktop {
+                width: 100vw;
+            }
+        }
+
+        .card-img {
+            padding-right: 20px;
+            padding-left: 20px;
+            border-radius: 50%;
+        }
+
+        .card-title {
+            font-size: $fsizehead2;
+            font-family: $fonthead2;
+        }
+
+        .card-text {
+            font-family: $fontcon;
+            font-size: $fsizecon;
+            font-weight: bold;
+
+        }
+
+        .btn-color {
+            background-color: $purplecolor;
+            font-family: $fontcon;
+            font-weight: bold;
+        }
+    }
+}

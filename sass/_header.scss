@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100vw;
+    background: $background;
+
+    .fnav {
+        background-color: $purplecolor;
+        height: 15vh;
+
+        @include landscape {
+            height: 55vh
+        }
+
+        @include tablet {
+            height: 55vh;
+        }
+
+        @include desktop {
+            height: 55vh;
+        }
+
+        .navbar-brand {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .nav-link {
+            font-size: $fsizehead;
+            padding-left: 15px 15px;
+            font-family: $fonthead;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.493);
+            }
+
+        }
+    }
+}

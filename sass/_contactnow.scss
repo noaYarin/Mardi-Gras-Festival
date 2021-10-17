@@ -1,0 +1,186 @@
+/*Contact page*/
+
+.wrapper {
+    background-image: url('background/mardi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .minicontainer {
+        width: 40vw;
+        height: 70vh;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: $whitecolor;
+        margin-top: 80px;
+        border-radius: 10%;
+        box-shadow: $boxshadow;
+        border: 4px dashed yellow;
+        animation: fadeInAnimation ease 4s;
+        animation-fill-mode: forwards;
+
+        @include landscape {
+            width: 100vw;
+            height: 80vh;
+            margin-top: 20px;
+        }
+
+        @include tablet {
+            width: 100vw;
+            height: 90vh;
+            margin-top: 20px;
+        }
+
+        @include desktop {
+            width: 100vw;
+            height: 90vh;
+            margin-top: 20px;
+        }
+
+
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        h5 {
+            border-bottom: 3px solid #000;
+            font-family: $fonthead;
+            font-size: 1.7rem;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        label,
+        input {
+            font-family: $fonthead2;
+            font-size: $fsizehead2;
+            text-align: center;
+            padding-right: 10px;
+            margin-right: 5px;
+        }
+
+        #myname {
+            border-radius: 10px;
+            border: 2px solid black;
+            margin-left: 23px;
+        }
+
+        #mylast {
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+
+        #myemail {
+            margin-left: 23px;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+
+        #mymessage {
+            margin-top: 20px;
+            margin-left: 70px;
+            border-radius: 10px;
+            border: 2px solid black;
+            overflow: scroll;
+            font-family: $fonthead2;
+            font-size: $fsizehead2;
+            text-align: center;
+            padding-right: 10px;
+        }
+
+        #btn {
+            padding: 5px 15px;
+            text-align: center;
+            margin-left: 110px;
+            border-radius: 10%;
+            border: black 2px solid;
+            background-color: #f2cc0f;
+            margin-top: 10px;
+
+            &:hover {
+                filter: brightness(60%);
+            }
+
+        }
+    }
+}
+
+.color-container {
+    width: 100vw;
+    height: auto;
+    background-image: $background;
+
+    @include landscape {
+        position: relative;
+    }
+
+    .row {
+        width: 50vw;
+        margin: 0 auto;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .map {
+            @include landscape {
+                position: absolute;
+                width: 100vw;
+                bottom: 430px;
+            }
+        }
+
+        .h6 {
+            border-bottom: 2px solid $blackcolor;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        section {
+            padding: 8px;
+            text-align: center;
+            font-size: $fsizecon;
+            font-family: $fontcon;
+            display: block;
+
+        }
+
+        .sec-one {
+
+            @include landscape {
+                margin-top: 330px;
+                width: 30vw;
+            }
+        }
+
+        .sec-two {
+            @include landscape {
+                margin-top: 30px;
+                width: 30vw;
+            }
+        }
+
+        .sec-three {
+            @include landscape {
+                margin-top: 30px;
+                width: 30vw;
+            }
+        }
+
+    }
+}

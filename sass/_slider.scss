@@ -1,0 +1,45 @@
+/*home page*/
+/*slider*/
+.slider {
+    object-fit: contain;
+    width: 100vw;
+    margin-top: 60px;
+
+    @include landscape {
+        display: none;
+    }
+
+    @include tablet {
+        margin-top: 0;
+    }
+
+    @include desktop {
+        margin-top: 0;
+    }
+
+}
+
+/*the text inside the slider*/
+.mytext {
+    font-weight: bolder;
+    background-color: $whitecolor;
+    padding: 5px;
+    font-family: $fonthead;
+    color: $blackcolor;
+    display: block;
+
+    @include tablet {
+        margin-top: 20px;
+    }
+
+}
+
+.img {
+    display: none;
+
+    @include landscape {
+        display: block;
+        height: 20vh;
+        width: 100vw;
+    }
+}

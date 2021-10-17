@@ -1,0 +1,56 @@
+.main-color {
+    width: 100vw;
+    background-image: $background;
+
+    .main-quiz {
+        width: 50vw;
+        margin: 0 auto;
+        background-color: $greencolor;
+        margin-top: 90px;
+        text-align: center;
+        box-shadow: $boxshadow;
+        border: 4px $blackcolor solid;
+
+        .head {
+            padding-top: 50px;
+            font-size: $fsizehead2;
+            font-family: $fonthead;
+            font-weight: bolder;
+        }
+
+
+        label {
+            border-bottom: 1px solid #000;
+            font-size: $fsizehead2;
+            font-family: $fonthead2;
+        }
+
+        input {
+            font-size: $fsizecon;
+            font-family: $fontcon;
+            margin: 5px 10px;
+            margin-top: 15px;
+        }
+
+        #btn {
+            font-size: $fsizehead;
+            font-family: $fonthead;
+            font-weight: 500;
+            padding: 5px 15px;
+            margin-top: 100px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10%;
+            outline: none;
+            color: $purplecolor;
+        }
+
+        #show {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            color: black;
+            width: 50vw;
+            height: 30vh;
+            padding-right: 10px;
+        }
+    }
+}
