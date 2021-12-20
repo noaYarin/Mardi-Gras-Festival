@@ -3,9 +3,11 @@
 ---
 
 ### Introduction
-We were given a project as part of our studies to create website of carnival named: "Mardi-Gras".
+We were given a project as part of our studies to create a website of carnival named: "Mardi-Gras".
 The holiday of Mardi Gras is celebrated in all of Louisiana, including the city of New Orleans.
 It is filled with parades, balls and other celebrations leading up to Mardi Gras, which is French for “Fat Tuesday.”
+
+---
 
 ### About
 
