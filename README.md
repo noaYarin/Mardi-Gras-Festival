@@ -56,4 +56,4 @@ _Here's a peek at my project_
 >
 > > https://www.mardigrasneworleans.com
 
-*I would like to get from you a ⭐️ ! 
+* I would like to get ⭐️  from you!
